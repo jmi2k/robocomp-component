@@ -1,0 +1,23 @@
+include_directories(${EIGEN3_INCLUDE_DIR})
+find_package(Eigen3 REQUIRED)
+
+
+# Sources set
+SET ( SOURCES
+  specificworker.cpp
+  specificmonitor.cpp
+)
+
+# Headers set
+SET ( HEADERS
+  specificworker.h
+  specificmonitor.h
+)
+
+set(CMAKE_CXX_STANDARD 17)
+
+SET (LIBS ${LIBS}  )
+
+
+
+

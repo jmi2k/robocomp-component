@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="MyFirstComp" targetName="ICES__home_danipeix_robocomp_components_myComponent_src" />
+      <config projectName="MyFirstComp" targetName="MyFirstComp" />
+      <config projectName="MyFirstComp" targetName="MyFirstComp_autogen" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Default" GENERATION_DIR="$PROJECT_DIR$/../../../../robocomp/robocomp/components/myComponent" ENABLED="true">
+        <ADDITIONAL_GENERATION_ENVIRONMENT>
+          <envs>
+            <env name="ROBOCOMP" value="$PROJECT_DIR$/../../../../robocomp/robocomp" />
+            <env name="PATH" value="/opt/robocomp/bin:/usr/bin:$PATH" />
+          </envs>
+        </ADDITIONAL_GENERATION_ENVIRONMENT>
+      </configuration>
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70a57728-e2e3-43a0-916e-5731a790d290" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$ROBOCOMP$/components" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1pcPvXs3HP0pNI2H06m9CGzqH7b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../robocomp/robocomp/components/myComponent/CMakeLists.txt" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RunManager" selected="CMake Application.MyFirstComp">
+    <configuration name="ICES__home_danipeix_robocomp_components_myComponent_src" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyFirstComp" TARGET_NAME="ICES__home_danipeix_robocomp_components_myComponent_src" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstComp" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="etc/config" REDIRECT_INPUT="false" ELEVATE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyFirstComp" TARGET_NAME="MyFirstComp" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="MyFirstComp" RUN_TARGET_NAME="MyFirstComp">
+      <envs>
+        <env name="ROBOCOMP" value="$PROJECT_DIR$/../../../../robocomp/robocomp" />
+        <env name="PATH" value="/opt/robocomp/bin:/usr/bin:$PATH" />
+      </envs>
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstComp_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MyFirstComp" TARGET_NAME="MyFirstComp_autogen" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.ICES__home_danipeix_robocomp_components_myComponent_src" />
+      <item itemvalue="CMake Application.MyFirstComp" />
+      <item itemvalue="CMake Application.MyFirstComp_autogen" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70a57728-e2e3-43a0-916e-5731a790d290" name="Default Changelist" comment="" />
+      <created>1615479637234</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615479637234</updated>
+      <workItem from="1615479639001" duration="187000" />
+      <workItem from="1615479840328" duration="42000" />
+      <workItem from="1615479959549" duration="2730000" />
+      <workItem from="1615482910281" duration="51000" />
+      <workItem from="1615482969545" duration="62000" />
+      <workItem from="1615483073187" duration="317000" />
+      <workItem from="1615483410872" duration="739000" />
+      <workItem from="1615484163528" duration="13000" />
+      <workItem from="1615484440699" duration="17000" />
+      <workItem from="1615484481115" duration="9480000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
