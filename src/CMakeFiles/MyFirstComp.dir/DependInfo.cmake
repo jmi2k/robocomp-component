@@ -4,22 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/danipeix/robocomp/components/myComponent/src/CommonBehavior.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/CommonBehavior.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/DifferentialRobot.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/DifferentialRobot.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/GenericBase.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/GenericBase.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/Laser.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/Laser.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/MyFirstComp_autogen/mocs_compilation.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/MyFirstComp_autogen/mocs_compilation.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/RCISMousePicker.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/RCISMousePicker.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/commonbehaviorI.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/commonbehaviorI.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/genericmonitor.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/genericmonitor.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/genericworker.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/genericworker.cpp.o"
-  "/home/robocomp/robocomp/classes/qlog/qlog.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o"
-  "/home/robocomp/robocomp/classes/rapplication/rapplication.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o"
-  "/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/main.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/main.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/rcismousepickerI.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/rcismousepickerI.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/specificmonitor.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/specificmonitor.cpp.o"
-  "/home/danipeix/robocomp/components/myComponent/src/specificworker.cpp" "/home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp.dir/specificworker.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/CommonBehavior.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/CommonBehavior.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/DifferentialRobot.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/DifferentialRobot.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/GenericBase.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/GenericBase.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/Laser.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/Laser.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/MyFirstComp_autogen/mocs_compilation.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/MyFirstComp_autogen/mocs_compilation.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/RCISMousePicker.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/RCISMousePicker.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/commonbehaviorI.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/commonbehaviorI.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/genericmonitor.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/genericmonitor.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/genericworker.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/genericworker.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/main.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/main.cpp.o"
+  "/opt/robocomp/classes/qlog/qlog.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/qlog/qlog.cpp.o"
+  "/opt/robocomp/classes/rapplication/rapplication.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/rapplication/rapplication.cpp.o"
+  "/opt/robocomp/classes/sigwatch/sigwatch.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/opt/robocomp/classes/sigwatch/sigwatch.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/rcismousepickerI.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/rcismousepickerI.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/specificmonitor.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/specificmonitor.cpp.o"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/specificworker.cpp" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp.dir/specificworker.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -44,9 +44,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/robocomp/include"
   "/classes"
   "."
-  "/home/robocomp/robocomp/classes"
-  "/home/robocomp/robocomp/libs"
-  "/home/robocomp/robocomp/interfaces"
+  "/opt/robocomp/classes"
+  "/opt/robocomp/libs"
+  "/opt/robocomp/interfaces"
   "/include"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
@@ -62,11 +62,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Pairs of files generated by the same build rule.
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/home/danipeix/robocomp/components/myComponent/src/CommonBehavior.h" "/home/danipeix/robocomp/components/myComponent/src/CommonBehavior.cpp"
-  "/home/danipeix/robocomp/components/myComponent/src/DifferentialRobot.h" "/home/danipeix/robocomp/components/myComponent/src/DifferentialRobot.cpp"
-  "/home/danipeix/robocomp/components/myComponent/src/GenericBase.h" "/home/danipeix/robocomp/components/myComponent/src/GenericBase.cpp"
-  "/home/danipeix/robocomp/components/myComponent/src/Laser.h" "/home/danipeix/robocomp/components/myComponent/src/Laser.cpp"
-  "/home/danipeix/robocomp/components/myComponent/src/RCISMousePicker.h" "/home/danipeix/robocomp/components/myComponent/src/RCISMousePicker.cpp"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/CommonBehavior.h" "/home/robo02/Escritorio/nosotros/robocomp-component/src/CommonBehavior.cpp"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/DifferentialRobot.h" "/home/robo02/Escritorio/nosotros/robocomp-component/src/DifferentialRobot.cpp"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/GenericBase.h" "/home/robo02/Escritorio/nosotros/robocomp-component/src/GenericBase.cpp"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/Laser.h" "/home/robo02/Escritorio/nosotros/robocomp-component/src/Laser.cpp"
+  "/home/robo02/Escritorio/nosotros/robocomp-component/src/RCISMousePicker.h" "/home/robo02/Escritorio/nosotros/robocomp-component/src/RCISMousePicker.cpp"
   )
 
 

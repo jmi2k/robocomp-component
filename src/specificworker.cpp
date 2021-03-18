@@ -18,7 +18,6 @@
  */
 #include "specificworker.h"
 #include <cmath>
-#include <Eigen3/Dense>
 
 
 /**
@@ -77,66 +76,59 @@ static float sigmoid(float x, float param){
     return 2 / (exp(-x * param) + 1) - 1;
 }
 
-void SpecificWorker::compute( ){
-    const float threshold = 200; // millimeters
-    float rot = 0.6;  // rads per second
+Eigen::Vector2f SpecificWorker::transform_world_to_robot(
+        Eigen::Vector2f target_in_world,
+        float robot_angle,
+        Eigen::Vector2f robot_in_world) {
+    Eigen::Matrix2f rot;
+    rot << cos(robot_angle), -sin(robot_angle),
+           sin(robot_angle),  cos(robot_angle);
+    auto target_in_robot = rot * (target_in_world - robot_in_world);
+    return target_in_robot;
+}
+
+void SpecificWorker::compute() {
     static RoboCompRCISMousePicker::Pick target;
-    static bool activo = false;
-    const float sigma = -0.5 * 0.5 / log(0.3);
+    static bool active    = false;
+    const float threshold = 200;
+    const float sigma     = -0.5 * 0.5 / log(0.3);
 
-    try{
-    	RoboCompGenericBase::TBaseState estadoLeido;
-    	differentialrobot_proxy->getBaseState(estadoLeido);
-        RoboCompLaser::TLaserData ldata = laser_proxy->getLaserData();
+    try {
+    	RoboCompGenericBase::TBaseState base_state;
+        Eigen::Vector2f target_in_world, robot_in_world, v_dist;
+        float alpha, dist;
 
-        if(auto t = target_buffer.try_get(); t.has_value()){
+        alpha = base_state.alpha;
+    	differentialrobot_proxy->getBaseState(base_state);
+
+        if(auto t = target_buffer.try_get(); t.has_value()) {
             target = t.value();
-            activo = true;
+            active = true;
         }
 
-        float x_dist = target.x - estadoLeido.x;
-        float z_dist = target.z - estadoLeido.z;
-        float dist = sqrt(x_dist * x_dist + z_dist * z_dist);
+        target_in_world = Eigen::Vector2f(target.x, target.z);
+        robot_in_world  = Eigen::Vector2f(base_state.x, base_state.z);
+        v_dist          = transform_world_to_robot(target_in_world, alpha, robot_in_world);
+        dist            = v_dist.norm();
 
-        if(dist < 100){
-            activo = false;
+        if (dist < threshold) {
+            active = false;
             differentialrobot_proxy->setSpeedBase(0, 0);
             return;
         }
-#if 1
-        if (activo){
-            float alpha = estadoLeido.alpha;
-            float theta = atan2(z_dist, x_dist);
-            float beta = M_PI_2 - (alpha + theta);
-            float wSpeed = sigmoid(beta, 1);
+        if (active) {
+            float beta = atan2(v_dist.x(), v_dist.y());
+            cout << "beta:" << beta << endl;
+            float wSpeed = sigmoid(beta, 2);
+
             float angular_reduction = exp( -(wSpeed * wSpeed) / sigma);
-            float distance_reduction = sigmoid(dist, 1/800.);
+            float distance_reduction = sigmoid(dist, 1/80.);
             float vSpeed = 1000 * angular_reduction * distance_reduction;
-            printf("distance_reduction = %f\n", distance_reduction);
-            /*
-            if (vSpeed > 1000) vSpeed = 1000;
-            if(angular_reduction > 1 || angular_reduction < -1 || distance_reduction > 1 || distance_reduction < -1) {
-                printf("distance_reduction = %f\n", distance_reduction);
-                printf("angular_reduction = %f\n", angular_reduction);
-            }
-            printf("1000 * exp( -(%f * %f) / %f) * sigmoid(%f)      beta = %f\n", wSpeed, wSpeed, sigma, dist, beta);
-            */
-            //printf("%f  %f  %f  %f\n", beta, wSpeed, dist, vSpeed);
             differentialrobot_proxy->setSpeedBase(vSpeed, wSpeed);
         }
-#else
-        if (activo){
-            printf("Entrando en activo!\n");
-            float alpha = estadoLeido.alpha;
-            float theta = atan2(z_dist, x_dist);
-            float beta = M_PI_2 - (alpha + theta);
-            float wSpeed = sigmoid(beta);
-            differentialrobot_proxy->setSpeedBase(0, wSpeed);
-        }else{
-            printf("Pues no :(\n");
-        }
-#endif
-    }catch(const Ice::Exception &ex){std::cout << ex << std::endl;}
+    } catch (const Ice::Exception &ex) {
+        std::cout << ex << std::endl;
+    }
 }
 
 

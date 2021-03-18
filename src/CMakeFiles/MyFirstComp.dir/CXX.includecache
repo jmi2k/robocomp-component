@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/danipeix/robocomp/components/myComponent/src/specificworker.cpp
+/home/robo02/Escritorio/nosotros/robocomp-component/src/specificworker.cpp
 specificworker.h
-/home/danipeix/robocomp/components/myComponent/src/specificworker.h
+/home/robo02/Escritorio/nosotros/robocomp-component/src/specificworker.h
 cmath
 -
-Eigen3/Dense
--
 
-/home/danipeix/robocomp/components/myComponent/src/specificworker.h
+/home/robo02/Escritorio/nosotros/robocomp-component/src/specificworker.h
 genericworker.h
 -
 innermodel/innermodel.h
 -
 doublebuffer/DoubleBuffer.h
 -
+Eigen3/Dense
+-
 
-/home/robocomp/robocomp/classes/doublebuffer/DoubleBuffer.h
+/opt/robocomp/classes/doublebuffer/DoubleBuffer.h
 shared_mutex
 -
 mutex
@@ -40,11 +40,11 @@ atomic
 future
 -
 threadpool/threadpool.h
-/home/robocomp/robocomp/classes/doublebuffer/threadpool/threadpool.h
+/opt/robocomp/classes/doublebuffer/threadpool/threadpool.h
 
-/home/robocomp/robocomp/classes/qlog/qlog.h
+/opt/robocomp/classes/qlog/qlog.h
 config.h
-/home/robocomp/robocomp/classes/qlog/config.h
+/opt/robocomp/classes/qlog/config.h
 QtCore
 -
 iostream
@@ -56,7 +56,7 @@ boost/format.hpp
 boost/format.hpp
 -
 
-/home/robocomp/robocomp/classes/threadpool/threadpool.h
+/opt/robocomp/classes/threadpool/threadpool.h
 condition_variable
 -
 functional

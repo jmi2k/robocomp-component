@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/139/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/145/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/139/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/145/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/danipeix/robocomp/components/myComponent
+CMAKE_SOURCE_DIR = /home/robo02/Escritorio/nosotros/robocomp-component
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/danipeix/robocomp/components/myComponent
+CMAKE_BINARY_DIR = /home/robo02/Escritorio/nosotros/robocomp-component
 
 # Utility rule file for MyFirstComp_autogen.
 
@@ -74,8 +74,8 @@ CMAKE_BINARY_DIR = /home/danipeix/robocomp/components/myComponent
 include src/CMakeFiles/MyFirstComp_autogen.dir/progress.make
 
 src/CMakeFiles/MyFirstComp_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/danipeix/robocomp/components/myComponent/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyFirstComp"
-	cd /home/danipeix/robocomp/components/myComponent/src && /snap/clion/139/bin/cmake/linux/bin/cmake -E cmake_autogen /home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robo02/Escritorio/nosotros/robocomp-component/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target MyFirstComp"
+	cd /home/robo02/Escritorio/nosotros/robocomp-component/src && /snap/clion/145/bin/cmake/linux/bin/cmake -E cmake_autogen /home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp_autogen.dir/AutogenInfo.json ""
 
 MyFirstComp_autogen: src/CMakeFiles/MyFirstComp_autogen
 MyFirstComp_autogen: src/CMakeFiles/MyFirstComp_autogen.dir/build.make
@@ -88,10 +88,10 @@ src/CMakeFiles/MyFirstComp_autogen.dir/build: MyFirstComp_autogen
 .PHONY : src/CMakeFiles/MyFirstComp_autogen.dir/build
 
 src/CMakeFiles/MyFirstComp_autogen.dir/clean:
-	cd /home/danipeix/robocomp/components/myComponent/src && $(CMAKE_COMMAND) -P CMakeFiles/MyFirstComp_autogen.dir/cmake_clean.cmake
+	cd /home/robo02/Escritorio/nosotros/robocomp-component/src && $(CMAKE_COMMAND) -P CMakeFiles/MyFirstComp_autogen.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/MyFirstComp_autogen.dir/clean
 
 src/CMakeFiles/MyFirstComp_autogen.dir/depend:
-	cd /home/danipeix/robocomp/components/myComponent && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/danipeix/robocomp/components/myComponent /home/danipeix/robocomp/components/myComponent/src /home/danipeix/robocomp/components/myComponent /home/danipeix/robocomp/components/myComponent/src /home/danipeix/robocomp/components/myComponent/src/CMakeFiles/MyFirstComp_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robo02/Escritorio/nosotros/robocomp-component && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robo02/Escritorio/nosotros/robocomp-component /home/robo02/Escritorio/nosotros/robocomp-component/src /home/robo02/Escritorio/nosotros/robocomp-component /home/robo02/Escritorio/nosotros/robocomp-component/src /home/robo02/Escritorio/nosotros/robocomp-component/src/CMakeFiles/MyFirstComp_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/MyFirstComp_autogen.dir/depend
 

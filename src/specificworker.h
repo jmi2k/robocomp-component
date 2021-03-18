@@ -30,6 +30,7 @@
 #include <genericworker.h>
 #include <innermodel/innermodel.h>
 #include <doublebuffer/DoubleBuffer.h>
+#include <Eigen3/Dense>
 
 class SpecificWorker : public GenericWorker
 {
@@ -39,6 +40,7 @@ public:
 	~SpecificWorker();
 	bool setParams(RoboCompCommonBehavior::ParameterList params);
 	void RCISMousePicker_setPick (const RoboCompRCISMousePicker::Pick &myPick);
+    Eigen::Vector2f transform_world_to_robot(Eigen::Vector2f target_in_world, float robot_angle, Eigen::Vector2f robot_in_world);
 
 
 public slots:
